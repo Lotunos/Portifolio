@@ -39,7 +39,8 @@ const ground = new THREE.Mesh(groundGeometry, groundMaterial);
 scene.add(ground);
 
 // === Load GLTF ===
-const loader = new GLTFLoader().setPath('./nave/');
+const basePath = `${location.origin}${location.pathname.replace(/\/$/, '')}/nave/`;
+const loader = new GLTFLoader().setPath(basePath);
 let model;
 loader.load('nave.gltf', (gltf) => {
   model = gltf.scene;
