@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLTF e Three.js</title>
-
+    <title>Document</title>
+    <link rel="stylesheet" href="site.css">
+    <script src="https://lotunos.github.io/Portifolio/main.js" defer></script>
     <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
     <script type="importmap">
     {
@@ -13,9 +15,122 @@
             "three/addons/": "https://unpkg.com/three@0.153.0/examples/jsm/"
         }
     }
-    </script>
+</script>
 </head>
 <body>
-    <script src="https://lotunos.github.io/Portifolio/main.js" type="module"></script>
+    <nav>
+        <ul id="navbar">
+             <li id="nome">
+                <h1>Álvaro</h1>
+            </li>
+            <h1 id="dev">-Dev</h1>
+            <ul id="menu-centro">
+                <li><a href="#folha2">Sobre</a></li>
+                <li><a href="#folha3">Projetos</a></li>
+                <li><a href="#rodape">Contatos</a></li>
+            </ul>
+            <ul id="menu-icones">
+                <li><a href="https://github.com/Lotunos" target="_blank"><img src="https://lotunos.github.io/Portifolio/icons8-github-48.png" class="icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/jose-alvaro-coelho-alves-da-costa/" target="_blank"><img src="https://lotunos.github.io/Portifolio/icons8-linkedin.svg" class="icon"></a></li>
+                <li><a href="mailto:lotunos@gmail.com?subject=Contato&body=Olá!" target="_blank"><img src="https://lotunos.github.io/Portifolio/icons8-email-48.png" class="icon"></a></li>
+                <li><a href="https://wa.me/5582988866657" target="_blank"><img src="https://lotunos.github.io/Portifolio/icons8-whatsapp-logo.svg" class="icon"></a></li>
+            </ul>
+        </ul>
+    </nav>
+    <section id="folha1">
+        <div class="center">
+            <img src="https://lotunos.github.io/Portifolio/foto.jpeg" id="minha">
+
+        </div>
+        <h1>Olá seja bem vindo!</h1>
+        <h2 id="titulo">José Álvaro Coelho Alves da Costa</h2>
+        <h3 id="sub">Desenvolvedor</h3>
+    </section>
+    <section id="folha2">
+        <h2 id="sobre-center">Sobre</h2>
+        <p class="p">
+            Desde cedo, sou movido pela curiosidade científica. Desmontava brinquedos para 
+            entender seus mecanismos e hoje, faço o oposto com sistemas, junto pequenas partes para 
+            criar um todo. Minha paixão por resolver problemas me levou à programação, onde cada software 
+            é uma solução concreta para um problema individual ou coletivo. Hoje atuo como dev C# asp.net. Cursando o 4º período de Ciências da Computação, 
+            também invisto em cursos extracurriculares para aprimorar-me constantemente.
+
+        </p>
+        <h2 id="sobre-center">Habilidades</h2>
+            <li>Java</li>
+            <li>SpringBoot</li>
+            <li>C#</li>
+            <li>Asp.Net</li>
+            <li>MySQL</li>
+            <li>WampServer</li>
+            <li>Postegres</li>  
+    </section>
+    <section id="folha3">
+        <h2 id="text3">Projetos</h2>
+        <div class="card">
+            <canvas id="quadro" width="400" height="200"> </canvas>
+
+            <div class="descricao">
+                <h3>Gerenciador de Biotecas</h3>
+                <p>Projeto criado para atender uma biblioteca no municipio de
+                    Chã-Preta. Foi desenvolvido em Java, utilizando a biblioteca
+                    IText 5.1.3 e wampserver MySQL como banco de dados.
+                </p>
+            </div>
+
+        </div>
+        <div class="card">
+            <div id="canvas-container">
+                <script type="module" src="https://lotunos.github.io/Portifolio/objeto.js"></script>
+            </div>
+                <div class="descricao2">
+                    <h3>Nave de jornada das estrelas</h3>
+                    <p>Feita em blender 4.5</p>
+                </div>
+            
+        </div>      
+        <div class="card">
+            <canvas id="quadro" width="400" height="200"> </canvas>
+            <div class="descricao">
+                <h3>Título do Card</h3>
+                <p>Aqui vai uma descrição sobre o conteúdo.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="rodape">
+        <div class="container-rodape">
+
+            <div class="coluna">
+                <h3>Álvaro</h3>
+                <p>Desenvolvedor JAVA/C#</p>
+            </div>
+
+            <div class="coluna">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#folha2">Sobre</a></li>
+                    <li><a href="#folha3">Projetos</a></li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="coluna">
+                <h3>Redes sociais</h3>
+                <div class="social">
+                    <a href="https://github.com/Lotunos" target="_blank"><img src="https://lotunos.github.io/Portifolio/icons8-github-48.png" class="icon"></a>
+                    <a href="https://www.linkedin.com/in/jose-alvaro-coelho-alves-da-costa/" target="_blank"><img src="https://lotunos.github.io/Portifolio/icons8-linkedin.svg" class="icon"></a>
+                    <a href="mailto:lotunos@gmail.com?subject=Contato&body=Olá!" target="_blank"><img src="https://lotunos.github.io/Portifolio/icons8-email-48.png" class="icon"></a>
+                    <a href="https://wa.me/5582988866657" target="_blank"><img src="https://lotunos.github.io/Portifolio/icons8-whatsapp-logo.svg" class="icon"></a>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="copy">
+            © 2025 José Álvaro Coelho Alves da Costa
+        </div>
+    </footer>
+
 </body>
+
 </html>
