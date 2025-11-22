@@ -198,18 +198,8 @@ nav {
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
     margin: 20px;
     transition: 0.3s;
-
-    /* O display:flex aqui é para o conteúdo *dentro* do card 
-     (o canvas e a descrição). 
-     Provavelmente você quer eles empilhados:
-    */
     display: flex;
     flex-direction: column;
-    /* Empilha o canvas e a descrição */
-
-    /* --- PROPRIEDADES REMOVIDAS DAQUI --- */
-    /* gap: 20px; */
-    /* flex-wrap: wrap; */
 }
 
 .card-nave {
@@ -220,11 +210,6 @@ nav {
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
     margin: 20px;
     transition: 0.3s;
-
-    /* O display:flex aqui é para o conteúdo *dentro* do card 
-     (o canvas e a descrição). 
-     Provavelmente você quer eles empilhados:
-    */
     display: flex;
     flex-direction: column;
 }
@@ -259,7 +244,6 @@ nav {
 }
 
 .descricao p {
-    color: #555;
     font-size: 15px;
 }
 #quadro2 {
@@ -283,7 +267,6 @@ nav {
 }
 
 .descricao2 p {
-    color: #555;
     font-size: 15px;
 }
 /*Codigo do roda pé do saite*/

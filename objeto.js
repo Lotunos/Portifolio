@@ -50,19 +50,19 @@ loader.load(
         child.receiveShadow = true;
       }
     });
-    model.scale.set(0.25, 0.25, 0.25);
+    model.scale.set(0.2, 0.2, 0.2);
     const box = new THREE.Box3().setFromObject(model);
     const center = new THREE.Vector3();
     box.getCenter(center);
     model.position.set(
-      -center.x+1,
+      -center.x+1.2,
       -center.y,
       -center.z 
     );     
     controls.target.set(0, 0, 0);
     controls.update();
     model.rotation.set(
-        -1,   
+        -0.5,   
         0,  
         0    
   );
